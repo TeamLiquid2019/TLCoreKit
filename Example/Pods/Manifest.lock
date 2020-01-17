@@ -1,0 +1,95 @@
+PODS:
+  - CocoaLumberjack (3.6.0):
+    - CocoaLumberjack/Core (= 3.6.0)
+  - CocoaLumberjack/Core (3.6.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+  - IQKeyboardManager (6.5.4)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.3.1)
+  - TLCoreKit (0.1.0):
+    - CocoaLumberjack
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - TLCoreKit/Macro (= 0.1.0)
+    - TLCoreKit/TLCoreKitThirdparty (= 0.1.0)
+    - TLCoreKit/UIBase (= 0.1.0)
+    - TLCoreKit/User (= 0.1.0)
+    - TLCoreKit/Widget (= 0.1.0)
+    - YYKit
+  - TLCoreKit/Macro (0.1.0):
+    - CocoaLumberjack
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - YYKit
+  - TLCoreKit/TLCoreKitThirdparty (0.1.0):
+    - CocoaLumberjack
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - YYKit
+  - TLCoreKit/UIBase (0.1.0):
+    - CocoaLumberjack
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - YYKit
+  - TLCoreKit/User (0.1.0):
+    - CocoaLumberjack
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - YYKit
+  - TLCoreKit/Widget (0.1.0):
+    - CocoaLumberjack
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - YYKit
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - FBSnapshotTestCase
+  - TLCoreKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - CocoaLumberjack
+    - FBSnapshotTestCase
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - YYKit
+
+EXTERNAL SOURCES:
+  TLCoreKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  IQKeyboardManager: 72b359cd7e777e3a984cedbe05f8da45320cbb63
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
+  TLCoreKit: cecedea4f7c82e7cfec648932dff9da0cc47d068
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 3299d7ce783717147ca2b8d615bd2792f805df6c
+
+COCOAPODS: 1.8.4
