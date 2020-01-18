@@ -1,12 +1,23 @@
 PODS:
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
   - CocoaLumberjack (3.6.0):
     - CocoaLumberjack/Core (= 3.6.0)
   - CocoaLumberjack/Core (3.6.0)
+  - CTMediator (25)
   - FBSnapshotTestCase (2.1.4):
     - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
   - IQKeyboardManager (6.5.4)
   - Masonry (1.1.0)
   - MBProgressHUD (1.1.0)
@@ -22,6 +33,7 @@ PODS:
     - TLCoreKit/UIBase (= 0.1.0)
     - TLCoreKit/User (= 0.1.0)
     - TLCoreKit/Widget (= 0.1.0)
+    - TLFoundation
     - YYKit
   - TLCoreKit/Macro (0.1.0):
     - CocoaLumberjack
@@ -29,6 +41,7 @@ PODS:
     - Masonry
     - MBProgressHUD
     - MJRefresh
+    - TLFoundation
     - YYKit
   - TLCoreKit/TLCoreKitThirdparty (0.1.0):
     - CocoaLumberjack
@@ -36,6 +49,7 @@ PODS:
     - Masonry
     - MBProgressHUD
     - MJRefresh
+    - TLFoundation
     - YYKit
   - TLCoreKit/UIBase (0.1.0):
     - CocoaLumberjack
@@ -43,6 +57,7 @@ PODS:
     - Masonry
     - MBProgressHUD
     - MJRefresh
+    - TLFoundation
     - YYKit
   - TLCoreKit/User (0.1.0):
     - CocoaLumberjack
@@ -50,6 +65,16 @@ PODS:
     - Masonry
     - MBProgressHUD
     - MJRefresh
+    - TLCoreKit/User/Model (= 0.1.0)
+    - TLFoundation
+    - YYKit
+  - TLCoreKit/User/Model (0.1.0):
+    - CocoaLumberjack
+    - IQKeyboardManager
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - TLFoundation
     - YYKit
   - TLCoreKit/Widget (0.1.0):
     - CocoaLumberjack
@@ -57,7 +82,39 @@ PODS:
     - Masonry
     - MBProgressHUD
     - MJRefresh
+    - TLFoundation
     - YYKit
+  - TLFoundation (0.1.1):
+    - CTMediator
+    - FMDB
+    - TLFoundation/Category (= 0.1.1)
+    - TLFoundation/DB (= 0.1.1)
+    - TLFoundation/Mediator (= 0.1.1)
+    - TLFoundation/Networking (= 0.1.1)
+    - TLFoundation/Tools (= 0.1.1)
+    - YTKNetwork
+  - TLFoundation/Category (0.1.1):
+    - CTMediator
+    - FMDB
+    - YTKNetwork
+  - TLFoundation/DB (0.1.1):
+    - CTMediator
+    - FMDB
+    - YTKNetwork
+  - TLFoundation/Mediator (0.1.1):
+    - CTMediator
+    - FMDB
+    - YTKNetwork
+  - TLFoundation/Networking (0.1.1):
+    - CTMediator
+    - FMDB
+    - YTKNetwork
+  - TLFoundation/Tools (0.1.1):
+    - CTMediator
+    - FMDB
+    - YTKNetwork
+  - YTKNetwork (2.1.4):
+    - AFNetworking/NSURLSession (~> 3.0)
   - YYKit (1.0.9):
     - YYKit/no-arc (= 1.0.9)
   - YYKit/no-arc (1.0.9)
@@ -67,6 +124,13 @@ DEPENDENCIES:
   - TLCoreKit (from `../`)
 
 SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AFNetworking
+    - CTMediator
+    - FMDB
+    - YTKNetwork
+  https://github.com/TeamLiquid2019/TLFoundationSpec.git:
+    - TLFoundation
   trunk:
     - CocoaLumberjack
     - FBSnapshotTestCase
@@ -81,15 +145,20 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
   CocoaLumberjack: 78b0c238666f4f58db069738ec176f4519557516
+  CTMediator: 830c1fc204b3a6abf2a059510c7380f56343da0f
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
   IQKeyboardManager: 72b359cd7e777e3a984cedbe05f8da45320cbb63
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   MJRefresh: eeda70fbf0ad277f3178cef1cd0c3532591d6237
-  TLCoreKit: cecedea4f7c82e7cfec648932dff9da0cc47d068
+  TLCoreKit: 5f934baaac86a204ad457ceff9bc1ff877b3d0b2
+  TLFoundation: 4ddfe7a339ebc67f1bb2d73eee81afb7654835a7
+  YTKNetwork: 19be749c30f0512ada07180f4637b4b67bc8ddc2
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 3299d7ce783717147ca2b8d615bd2792f805df6c
+PODFILE CHECKSUM: d3d38709f264a9326d61688098751a16039c4bd4
 
 COCOAPODS: 1.8.4

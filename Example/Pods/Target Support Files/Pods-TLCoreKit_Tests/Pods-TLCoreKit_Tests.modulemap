@@ -1,4 +1,4 @@
-framework module Pods_TLCoreKit_Tests {
+module Pods_TLCoreKit_Tests {
   umbrella header "Pods-TLCoreKit_Tests-umbrella.h"
 
   export *

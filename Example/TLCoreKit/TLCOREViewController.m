@@ -8,6 +8,11 @@
 
 #import "TLCOREViewController.h"
 
+
+#import <TLCoreUser.h>
+
+#import <TLCoreUserInfo.h>
+
 @interface TLCOREViewController ()
 
 @end
@@ -18,6 +23,18 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    BOOL isLogin = [[TLCoreUser shareInstance] isLogin];
+    
+    if (isLogin) {
+        NSLog(@"登录了");
+    }else{
+        NSLog(@"未登录");
+    }
+    
+    [[TLCoreUser shareInstance] logoutWithCompletedBlock:^(BOOL isSuccess, NSString * _Nonnull code) {
+        NSLog(@"%@",code);
+    }];
 }
 
 - (void)didReceiveMemoryWarning

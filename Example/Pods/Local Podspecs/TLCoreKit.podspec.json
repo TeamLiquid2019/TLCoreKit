@@ -38,12 +38,21 @@
     ],
     "MJRefresh": [
 
+    ],
+    "TLFoundation": [
+
     ]
   },
   "subspecs": [
     {
       "name": "User",
-      "source_files": "TLCoreKit/Classes/User/*.{h,m}"
+      "source_files": "TLCoreKit/Classes/User/*.{h,m}",
+      "subspecs": [
+        {
+          "name": "Model",
+          "source_files": "TLCoreKit/Classes/User/Model/*.{h,m}"
+        }
+      ]
     },
     {
       "name": "Macro",
