@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TLCoreKit'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'TLCoreKit 核心业务组件库'
 
 # This description is used to generate tags and improve search results.
@@ -78,5 +78,6 @@ TLCoreKit 核心业务组件库
   s.dependency 'MBProgressHUD'
   s.dependency 'MJRefresh'
   s.dependency 'TLFoundation'
+  s.dependency 'FDFullscreenPopGesture'
   
 end
