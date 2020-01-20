@@ -7,8 +7,4 @@
 
 #import "TLCoreMacro.h"
 
-@implementation TLCoreMacro
 
-
-
-@end
