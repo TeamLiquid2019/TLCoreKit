@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TLCoreKit'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = 'TLCoreKit 核心业务组件库'
 
 # This description is used to generate tags and improve search results.
