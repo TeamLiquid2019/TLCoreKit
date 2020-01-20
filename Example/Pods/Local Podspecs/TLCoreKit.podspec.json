@@ -1,6 +1,6 @@
 {
   "name": "TLCoreKit",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "summary": "TLCoreKit 核心业务组件库",
   "description": "TLCoreKit 核心业务组件库",
   "homepage": "https://github.com/TeamLiquid2019/TLCoreKit",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/TeamLiquid2019/TLCoreKit.git",
-    "tag": "0.1.2"
+    "tag": "0.1.4"
   },
   "platforms": {
     "ios": "9.0"

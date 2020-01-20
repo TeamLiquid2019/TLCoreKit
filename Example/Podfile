@@ -8,7 +8,6 @@ target 'TLCoreKit_Example' do
 
   target 'TLCoreKit_Tests' do
     inherit! :search_paths
-
-    pod 'FBSnapshotTestCase'
+    
   end
 end
