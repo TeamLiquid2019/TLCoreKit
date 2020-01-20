@@ -1,1 +1,0 @@
-../../../../../TLCoreKit/Classes/User/Model/TLCoreUserInfo.h
